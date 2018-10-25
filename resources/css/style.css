@@ -1,0 +1,191 @@
+/*----------------CSS RESET----------------*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+.col {
+	margin: 0;    
+}
+
+
+/*----------------BASE STYLES----------------*/
+
+html, body{
+    background-color: #fff;
+    color:#555;
+    font-family:'Montserrat', 'Arial', sans-serif;
+    font-weight: 300;
+    font-size: 20px;
+    text-rendering: optimizeLegibility;
+    overflow-x: hidden;
+}
+
+
+
+h3{
+    font-size: 1.1rem;
+    margin-bottom: 2rem;
+    color: rgba(238, 191, 107, 0.8);
+}
+
+
+
+
+/*----------------LOGIN----------------*/
+.signin, .register{
+    /*background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.5)), to(rgba(0, 0, 0, 0.5))),url(images/background.jpeg);*/
+    background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(images/background.jpeg);
+    background-size: cover;
+    background-position: center; 
+    height: 100vh;
+    text-align: center;    
+}
+
+
+.signin-form-full, .register-form-full{
+    /*background: blue;*/
+    position: relative;
+    top:25%;
+    width:28rem;
+    margin:auto;
+    background-color: rgba(255, 255, 255,0.2);
+    padding-top: 2rem;
+    padding-bottom: 4rem;
+}
+
+
+
+.signin-form, .register-form{
+    width:70%;
+    margin:auto;
+    text-align: center;
+}
+
+input[type=text],
+input[type=email],
+input[type=password]{
+    color:rgba(238, 191, 107, 1);
+    border: 0;
+    outline: 0;
+    background: transparent;
+    border-bottom: 2px solid rgba(238, 191, 107, 0.8);    
+    display: block;
+    margin: 0 auto;
+    /*margin-top: 1rem;*/
+    width:100%;
+    /*padding:7px;*/        
+}
+
+::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+    font-family:'Montserrat', 'Arial', sans-serif;
+    color: rgba(238, 191, 107, 1);
+    opacity: 1; /* Firefox */
+    font-size: 0.7rem;
+}
+
+.login-text{
+    font-size: 0.7rem;
+    color: rgba(238, 191, 107, 1);
+}
+
+.link{
+    color: rgba(228, 150, 92, 1);
+    text-decoration: none;
+}
+
+.link:hover{
+    color: rgba(228, 150, 92, 0.7);
+}
+
+.logo{
+    width:5.5rem;
+    height: auto;
+    border-radius: 5%;
+    margin-bottom: 1rem; 
+    transition: transform .2s;
+}
+
+.logo:hover{
+    transform: scale(1.08);
+}
+
+.input-row{
+    margin-top:1.5rem;
+}
+
+
+
+/*----------------BUTTONS----------------*/
+.btn:link,
+.btn:visited,
+input[type=submit] {
+    width:100%;
+    font-size: 0.7rem;
+    font-family:'Montserrat', 'Arial', sans-serif;
+    background-color: rgba(238, 191, 107, 1);
+    border: 1px solid rgba(238, 191, 107, 1);
+    color:floralwhite;
+    display:inline-block;
+    padding-top: 3%;
+    padding-bottom: 3%;
+    padding-left: 5%;
+    padding-right: 5%;
+    margin-top: 0.5rem;
+    margin-bottom: 1.5rem;
+    text-decoration: none;
+    border-radius: 50px;
+    -webkit-transition: background 0.1s, border 0.2s, color 0.2s;
+    transition: background 0.1s, border 0.2s, color 0.2s;
+    cursor: pointer;
+}
+
+.btn:hover,
+.btn:active,
+input[type=submit]:hover,
+input[type=submit]:active{
+    background-color: rgba(238, 191, 107, 0.7);
+    border: 1px solid rgba(238, 191, 107, 0.7);
+    color:floralwhite;    
+}
+
